@@ -1,0 +1,93 @@
+%%% Local Variables:
+%%% mode: LaTeX
+%%% TeX-master: t
+%%% TeX-engine: xetex
+%%% End:
+\documentclass[a4paper,sans]{moderncv}
+
+\usepackage[english,russian]{babel}
+
+
+
+\ifXeTeX
+  \usepackage{polyglossia}
+  %% устанавливает главный язык документа
+  \setdefaultlanguage{english}
+  
+  %% устанавливает второй язык документа
+  \setotherlanguage{russian}
+
+  \setmainfont{Noto Sans}
+  
+\fi
+
+
+\usepackage{graphicx}
+\graphicspath{ {img} }
+
+\moderncvtheme{classic}
+\moderncvcolor{black}
+
+%%%%%%%%%%%%%%%%
+% Contact info %
+%%%%%%%%%%%%%%%%
+\name{Artsiom}{Karakin}
+\title{PCB Layout Engineer \&\\ Embedded Programmer}
+\phone[mobile]{+375292560234}
+\email{karakin2000@gmail.com}
+\social[github]{artsi0m}
+%\social[matrix]{artsi0m:matrix.org}
+\social[matrix]{artsi0m:nope.chat}
+\social[telegram]{artsi0m}
+\photo[110pt][1pt]{Bsuir-photo.jpg}
+
+\begin{document}
+
+\maketitle
+
+
+
+\section{Work Experience}
+\cventry{2024-06-07--2024-07-10}{PCB Layout Engineer}{\textrm{ООО РТЕ Сервис} rte.by}
+    {Minsk}{}{Completed an apprenticeship}
+
+\section{Education}
+\cventry{2025}{Radioelectronics Engineer}
+{Belarussian State University of Informatics and Radioelectronics bsuir.by}{Minsk}
+{Bachelor}{In my senior year. I'll graduate by 2025.}
+   
+\section{Key skills \& Completed Projects}
+\subsection{PCB design with KiCAD}
+
+\cvitem{RS232 to RS485 Converter}{
+  Two layred PCB design with structured element list
+  done on apprenteceship. Learned that I should always
+  verify my project in simulator.
+  \url{https://github.com/artsi0m/6sem_practise}}
+   
+\cvitem{Hackerspace Tube PCB}{
+  \textbf{Single} layer PCB design
+  with fabrication files saved in git repo.
+  Self-education project done in Minsk Hackerspace.
+  \url{https://github.com/artsi0m/HS_tube_KiCAD}
+}
+
+\subsection{AVR assembly programming}
+
+\cvitem{Segment Display with Pinboard 2}{
+  BCD to 7 segment decoder written in Atmel AVR-assembly
+  for Pinboard 2 devboard.
+  Learned how to write in assembly with Atmel studio and flash
+  programm to microcontroller using avrdude.
+  \url{https://github.com/artsi0m/lab1_segment_display}
+}
+
+\subsection{C Programming}
+
+\cvitem{argcalc}{
+  Reimplementation of an expr(1) utility from UNIX .
+  Simple command line calculator using Dejkstra's Shunting Yard algorithm.
+  \url{https://github.com/artsi0m/argcalc}
+}
+
+\end{document}
