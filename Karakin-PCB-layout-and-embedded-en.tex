@@ -7,23 +7,22 @@
 
 \usepackage[english,russian]{babel}
 
-
-
 \ifXeTeX
   \usepackage{polyglossia}
   %% устанавливает главный язык документа
   \setdefaultlanguage{english}
-  
   %% устанавливает второй язык документа
   \setotherlanguage{russian}
-
   \setmainfont{Noto Sans}
-  
+  \setsansfont{Noto Sans}
+  \setromanfont{Crimson}
 \fi
-
 
 \usepackage{graphicx}
 \graphicspath{ {img} }
+
+\usepackage{geometry}
+\geometry{left=15mm, top=15mm, right=20mm, bottom=20mm}
 
 \moderncvtheme{classic}
 \moderncvcolor{black}
