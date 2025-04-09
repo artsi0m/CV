@@ -1,0 +1,113 @@
+\documentclass[a4paper,sans]{moderncv}
+
+\usepackage[english,russian]{babel}
+
+\ifXeTeX
+  \usepackage{polyglossia}
+  %% устанавливает главный язык документа
+  \setdefaultlanguage{english}
+  %% устанавливает второй язык документа
+  \setotherlanguage{russian}
+  \setmainfont{Noto Sans}
+  \setsansfont{Noto Sans}
+  \setromanfont{Crimson}
+\fi
+
+\usepackage{graphicx}
+\graphicspath{ {img} }
+
+\usepackage{geometry}
+
+\geometry{left=15mm, top=15mm, right=20mm, bottom=20mm}
+
+\usepackage{multicol}
+
+\moderncvtheme{classic}
+\moderncvcolor{black}
+
+%%%%%%%%%%%%%%%%
+% Contact info %
+%%%%%%%%%%%%%%%%
+\name{Artsiom}{Karakin}
+\title{DevOps Engineer}
+%\phone[mobile]{+375292560234}
+\email{karakin2000@gmail.com}
+\social[github]{artsi0m}
+%\social[matrix]{artsi0m:matrix.org}
+\social[matrix]{artsi0m:nope.chat}
+\social[telegram]{artsi0m}
+\photo[110pt][1pt]{Bsuir-photo.jpg}
+
+
+
+
+\begin{document}
+
+\maketitle
+
+\input{work-experience}
+
+\section{Education}
+\cventry{2025}{Radioelectronics Engineer}
+{Belarussian State University of Informatics and Radioelectronics bsuir.by}
+{Minsk}{Bachelor}{In my senior year. I'll graduate by 2025.}
+
+
+\section{Key skills}
+\begin{multicols}{4}
+  \begin{itemize}
+  \item shell scripting
+  \item SQL
+  \item Ansible
+  \item Python
+  \item awk
+  \item coreutils
+  \item Linux
+  \item docker
+  \item docker compose
+\end{itemize}
+\end{multicols}
+
+\section{Open-source contribution}
+\cvitem{textproc/py3-bashlex \& graphics/py-bdfparser}{
+  Ports of the parsing libraries I've submitted to
+  OpenBSD ports, which then was accepted into the ports monorepository.
+  \url{https://openports.eu/ports/textproc/py-bashlex}
+}
+
+
+\section{Completed Projects}
+\subsection{Python3, matplotlib}
+
+\cvitem{Matplotlib graphs}{
+  There are some python code I wrote to automate
+  report generation for physics laboratory lessons
+  done in BSUIR.
+  \url{https://github.com/artsi0m/physics_labs}}
+
+\subsection{Linux command line}
+\cvitem{last-post.sh}{
+  I used curl and UNIX tools to email users about web page changes.
+  \url{https://gist.github.com/artsi0m/51e644b9d4eff2340fef4abf0ba13656}}
+
+\subsection{C Programming}
+
+\cvitem{argcalc}{
+  Reimplementation of an expr(1) utility from UNIX.
+  Simple command line calculator using Dejkstra's Shunting Yard algorithm.
+  \url{https://github.com/artsi0m/argcalc}
+}
+  
+
+
+
+% current date
+\vfill
+\today
+
+\end{document}
+%%% Local Variables:
+%%% mode: LaTeX
+%%% TeX-master: t
+%%% TeX-engine: xetex
+%%% End:
