@@ -10,7 +10,16 @@
   \setotherlanguage{russian}
   \setmainfont{Noto Sans}
   \setsansfont{Noto Sans}
-  \setromanfont{Crimson}
+% \setromanfont{Crimson}
+\fi
+
+
+\ifLuaTeX
+  \usepackage{fontspec}
+  \setmainfont{Noto Sans}
+  \setsansfont{Noto Sans}
+
+  \usepackage{datetime2}
 \fi
 
 \usepackage{graphicx}
