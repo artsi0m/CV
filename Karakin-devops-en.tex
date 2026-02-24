@@ -37,6 +37,7 @@
 \input{contacts}
 \title{DevOps Engineer
   \& Linux System Administrator}
+
 \begin{document}
 
 \maketitle{}
@@ -60,23 +61,23 @@
   \item Python
   \item Terraform
   \item docker
-  \item docker compose
-  \item podman
+  \item kubernetes (kind)
     
   \item AWS EC2
-  \item AWS ECS
   \item AWS ELB
   \item AWS IAM
   \item AWS RDS
-  \item AWS VPC    
+  \item AWS VPC
+    
 \end{itemize}
 \end{multicols}
 
 \section{Open-source contribution}
-\cvitem{textproc/py3-bashlex \& graphics/py-bdfparser}{
+\cvitem{textproc/py3-bashlex}{
   My submissions of python parsing libraries into OpenBSD ports
-  monorepository.
-  \url{https://openports.eu/ports/textproc/py-bashlex}
+  monorepository
+  \href{https://www.mail-archive.com/ports@openbsd.org/msg123240.html}{[1]}
+  \href{https://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/textproc/py-bashlex/Makefile}{[2]}.
 }
 
 \cvitem{acme-nginx}{
@@ -93,16 +94,12 @@
   done in BSUIR.
   \url{https://github.com/artsi0m/physics_labs}}
 
-\subsection{Linux command line}
-\cvitem{last-post.sh}{
-  I used curl and UNIX tools to email users about web page changes.
-  \url{https://gist.github.com/artsi0m/51e644b9d4eff2340fef4abf0ba13656}}
-
 \subsection{C Programming}
 
 \cvitem{argcalc}{
-  Reimplementation of an expr(1) utility from UNIX.
+  Re-implementation of an expr(1) utility from UNIX.
   Simple command line calculator using Dejkstra's Shunting Yard algorithm.
+  I use it to test various new additions of C standard and build systems.
   \url{https://github.com/artsi0m/argcalc}
 }
   
@@ -117,5 +114,5 @@ Last edited: \today
 %%% Local Variables:
 %%% mode: LaTeX
 %%% TeX-master: t
-%%% TeX-engine: xetex
+%%% TeX-engine: luatex
 %%% End:
